@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider next dev",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +13,7 @@
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "axios": "^0.23.0",
+    "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
     "framer-motion": "^4.1.17",
     "millify": "^4.0.0",
